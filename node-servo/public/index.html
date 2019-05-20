@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Servo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="servo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script src="servo.js"></script>    
+</head>
+  
+<body onload="initialize();">
+    <div class="w3-container">
+        <h1>Web Servo</h1>
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-mobile">
+                <p><input type="range" min="-100" max="100" value="0" class="slider" id="servoSlider"></p>
+            </div>
+        </div>
+    </div>
+</script>
+</body>
+</html>
