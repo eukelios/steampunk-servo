@@ -33,6 +33,7 @@ function initialize() {
 	
 }
 
+
 function btnClicked(slot,plon,ploff) {						//buttons can call functions directly by using onclick
 	// alert("Klicked!"+" "+slot+" "+plon+" "+ploff);								//for debugging reasons only
 	socket.emit("kick", slot, plon, ploff);
