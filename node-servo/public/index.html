@@ -15,10 +15,21 @@
         <h1>Web Servo</h1>
         <div class="w3-cell-row">
             <div class="w3-container w3-cell w3-mobile">
-                <p><input type="range" min="-100" max="100" value="0" class="slider" id="servoSlider"></p>
+                <p><input type="range" min="700" max="2300" value="1500" class="slider" id="servoSlider"></p>
+					 <p id='pulseLen'>1500</p>
+					 <p>Closed
+					 <label class="switch">
+					   <input type="checkbox" id="servoSwitch">
+					   <span class="slidesw round"></span>
+					 </label>
+					 Open
+					 </p>
+					 <br>
+					 <p>Robot Arm Test using sleep:</p>
+					 <p><button type="button" class="button" id="servoButton" onclick="btnClicked(0,2300,800)">Kick 0!</button>
+					 <button type="button" class="button" id="servoButton" onclick="btnClicked(1,2600,2150)">Kick 1!</button></p>
             </div>
         </div>
     </div>
-</script>
 </body>
 </html>
